@@ -3006,69 +3006,49 @@ div.aboutColumns-image img {
     margin-top: var(--grid-gutters);
 }
 
- 
-.inp
-  position: relative
-  margin: auto
-  width: 100%
-  max-width: 280px
-  border-radius: 3px
-  overflow: hidden
+h1::before {  
+  transform: scaleX(0);
+  transform-origin: bottom right;
+}
 
-  .label
-    position: absolute
-    top: 20px
-    left: 12px
-    font-size: 16px
-    color: rgba($dark,.5)
-    font-weight: 500
-    transform-origin: 0 0
-    transform: translate3d(0,0,0)
-    transition: all .2s ease
-    pointer-events: none
+h1:hover::before {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
 
-  .focus-bg
-    position: absolute
-    top: 0
-    left: 0
-    width: 100%
-    height: 100%
-    background: rgba($dark,.05)
-    z-index: -1
-    transform: scaleX(0)
-    transform-origin: left
+h1::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  inset: 0 0 0 0;
+  background: hsl(200 100% 80%);
+  z-index: -1;
+  transition: transform .3s ease;
+}
 
-  input
-    -webkit-appearance: none
-    appearance: none
-    width: 100%
-    border: 0
-    font-family: inherit
-    padding: 16px 12px 0 12px
-    height: 56px
-    font-size: 16px
-    font-weight: 400
-    background: rgba($dark,.02)
-    box-shadow: inset 0 -1px 0 rgba($dark,.3)
-    color: $dark
-    transition: all .15s ease
+h1 {
+  position: relative;
+  font-size: 5rem;
+}
 
-    &:hover
-      background: rgba($dark,.04)
-      box-shadow: inset 0 -1px 0 rgba($dark,.5)
-    
-    &:not(:placeholder-shown)
-      + .label
-        color: rgba($dark,.5)
-        transform: translate3d(0,-12px,0) scale(.75)
-    
-    &:focus
-      background: rgba($dark,.05)
-      outline: none
-      box-shadow: inset 0 -2px 0 $primary
-      + .label
-        color: $primary
-        transform: translate3d(0,-12px,0) scale(.75)
-        + .focus-bg
-          transform: scaleX(1)
-          transition: all .1s ease
+html {
+  block-size: 100%;
+  inline-size: 100%;
+}
+
+body {
+  min-block-size: 100%;
+  min-inline-size: 100%;
+  margin: 0;
+  box-sizing: border-box;
+  display: grid;
+  place-content: center;
+  font-family: system-ui, sans-serif;
+}
+
+@media (orientation: landscape) {
+  body {
+    grid-auto-flow: column;
+  }
+}

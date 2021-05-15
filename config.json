@@ -8,10 +8,6 @@
     {
       "target": "\"presale.html\"",
       "replace_by": "\"/presale\""
-    },
-    {
-      "target": "\"about.html\"",
-      "replace_by": "\"/about\""
     }
   ],
   
@@ -29,13 +25,6 @@
     {
       "name": "presale",
       "filepath": "presale.html",
-      "move_to_subfolder": true,
-      "apply_links_replacements": true,
-      "apply_file_links_replacements": true
-    },
-    {
-      "name": "about",
-      "filepath": "about.html",
       "move_to_subfolder": true,
       "apply_links_replacements": true,
       "apply_file_links_replacements": true

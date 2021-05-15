@@ -8,6 +8,10 @@
     {
       "target": "\"presale.html\"",
       "replace_by": "\"/presale\""
+    },
+    {
+      "target": "\"about.html\"",
+      "replace_by": "\"/about\""
     }
   ],
   

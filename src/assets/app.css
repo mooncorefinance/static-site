@@ -1996,6 +1996,16 @@ div.aboutColumns-image img {
     padding-left: 50px;
     padding-right: 50px;
 }
+
+@media (max-width: 375px) {
+    .hero.-home .hero-stack {
+        padding-bottom: 450px;
+        padding-top: 200px;
+        padding-left: 40px;
+        padding-right: 10px;
+    }
+}
+
 @media (min-width: 768px) {
     .hero.-home .hero-stack {
         padding-left: var(--grid-gutters);
@@ -3029,14 +3039,23 @@ h1 {
   line-height: 110%;
 }
 
+@media (max-width: 375px) {
+    h1 {
+        position: relative;
+        font-size: 3rem;
+        line-height: 110%;
+      }
+  }
+  
+
 html {
   block-size: 100%;
   inline-size: 100%;
 }
 
 body {
-  min-block-size: 90%;
-  min-inline-size: 90%;
+  min-block-size: 95%;
+  min-inline-size: 95%;
   margin: 0;
   box-sizing: border-box;
   display: grid;

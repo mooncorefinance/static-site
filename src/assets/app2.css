@@ -2098,21 +2098,8 @@ div.aboutColumns-image img {
 .hero-cta .button {
     color: var(--color-type-white);
 }
-.jobsCta {
-    --jobsCta-scale: 2.08;
-    background: url(/ceecb3a0de315a6222f8b40d9570f479ba6dc04b/b52e3/images/pages/homepage-footer-mobile.png) no-repeat top center/cover;
-    height: calc(var(--jobsCta-scale) * 500px);
-    overflow: hidden;
-    padding-bottom: var(--grid-gutters);
-    padding-top: var(--grid-gutters);
-    position: relative;
-}
-@media (min-width: 640px) {
-    .jobsCta {
-        --jobsCta-scale: 1.25;
-        background: url(/images/pages/adda9c994370b8bf704622762626be991fc29c0d/homepage-footer.jpg) no-repeat top center/cover;
-    }
-}
+
+
 @media (min-width: 1120px) {
     .jobsCta {
         --jobsCta-scale: 1.2;

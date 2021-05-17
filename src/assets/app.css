@@ -2006,6 +2006,10 @@ div.aboutColumns-image img {
     }
 }
 
+
+
+
+
 @media (min-width: 768px) {
     .hero.-home .hero-stack {
         padding-left: var(--grid-gutters);
@@ -3046,7 +3050,14 @@ h1 {
         line-height: 110%;
       }
   }
-  
+
+  @media (max-width: 300px) {
+    h1 {
+        position: relative;
+        font-size: 2rem;
+        line-height: 110%;
+      }
+}
 
 html {
   block-size: 100%;

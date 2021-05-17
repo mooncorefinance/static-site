@@ -1962,15 +1962,13 @@ div.aboutColumns-image img {
 }
 .hero.-home {
     background-color: #7EB2DD;
-    background-image: url(/images/pages/35f72f2dbdd1c507aa2a809fe3c22c2fad12162d/homepage-mobile.png);
     background-position: left 71%;
     background-size: 360px;
     background-repeat: no-repeat;
 }
-@media (min-width: 480px) {
+@media (min-width: 280px) {
     .hero.-home {
-        background-image: url(/images/pages/ce9d3440b6152b862e938619026444a5cf1c1969/homepage-tablet.png);
-        background-position: 115% 80%;
+        background-position: right 80%;
         background-size: 360px;
     }
 }
@@ -1982,14 +1980,12 @@ div.aboutColumns-image img {
 }
 @media (min-width: 960px) {
     .hero.-home {
-        background-image: url(/images/pages/0fb99213912b0a49657930190a9c5730a8713144/homepage-desktop.png);
         background-position: 50% 80%;
         background-size: 1260px;
     }
 }
 @media (min-width: 1120px) {
     .hero.-home {
-        background-image: url(/images/pages/0fb99213912b0a49657930190a9c5730a8713144/homepage-desktop.png);
         background-position: 85% center;
         background-size: contain;
     }
@@ -1997,8 +1993,8 @@ div.aboutColumns-image img {
 .hero.-home .hero-stack {
     padding-bottom: 450px;
     padding-top: 200px;
-    padding-left: calc(var(--grid-gutters) / 2);
-    padding-right: calc(var(--grid-gutters) / 2);
+    padding-left: 50px;
+    padding-right: 50px;
 }
 @media (min-width: 768px) {
     .hero.-home .hero-stack {
@@ -3030,6 +3026,7 @@ h1::before {
 h1 {
   position: relative;
   font-size: 5rem;
+  line-height: 110%;
 }
 
 html {
@@ -3038,8 +3035,8 @@ html {
 }
 
 body {
-  min-block-size: 100%;
-  min-inline-size: 100%;
+  min-block-size: 90%;
+  min-inline-size: 90%;
   margin: 0;
   box-sizing: border-box;
   display: grid;

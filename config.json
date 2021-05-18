@@ -4,6 +4,7 @@
     "build_path": "dist",
     "root_file_name": "index.html"
   },
+
   
   "file_links_replacement": [
     {
@@ -13,6 +14,15 @@
     {
       "target": "images/",
       "replace_by": "../images/"
+    }
+  ],
+  "transforms": [
+    {
+      "name": "presale",
+      "filepath": "presale.html",
+      "move_to_subfolder": true,
+      "apply_links_replacements": true,
+      "apply_file_links_replacements": true
     }
   ]
 }

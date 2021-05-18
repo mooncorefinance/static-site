@@ -742,6 +742,16 @@ p.-large {
     white-space: nowrap;
     position: relative;
 }
+
+.navigation .navigation-footer {
+    font-family: var(--font-tertiary);
+    font-weight: var(--font-tertiary-weight-medium);
+    font-size: 10px;
+    margin-right: 0em;
+    margin-top: -10em;
+    text-transform: uppercase;
+}
+
 @media (min-width: 768px) {
     .navigation .navigation-link {
         font-family: var(--font-tertiary);
